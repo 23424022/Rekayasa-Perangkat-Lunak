@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dimsum Mentai</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@800&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <div>🥟 Dimsum Mentai</div>
+</nav>
+
+<div class="hero">
+  <h2 class="hero-title">Halo! Mau pesan apa hari ini? 🥟</h2>
+  <p class="hero-sub">Pilih menu favoritmu dan tambahkan ke keranjang</p>
+</div>
+
+<!-- FILTER -->
+<div class="filters" id="filters"></div>
+
+<!-- MENU -->
+<div class="grid" id="menu"></div>
+
+<!-- CART -->
+<div class="cart-sidebar">
+  <div class="cart-box">
+    <div class="cart-head">
+      <div class="cart-head-title">🛒 Keranjang</div>
+      <span class="cart-count-badge" id="cart-badge">0</span>
+    </div>
+    <div class="cart-list" id="cart-list">
+      <div class="cart-empty-msg">Belum ada item<br><small>Yuk pilih menu!</small></div>
+    </div>
+    <div class="cart-summary-box" id="cart-summary" style="display:none;">
+      <div class="cart-total-row"><span>Subtotal</span><span id="cart-subtotal-val">Rp 0</span></div>
+      <div class="cart-total-row big"><span>Total</span><span id="cart-total-val">Rp 0</span></div>
+      <input class="cart-name-field" id="cart-cust-name" placeholder="Nama pemesan (wajib)">
+      <button class="btn-checkout" id="btn-checkout">Pesan via WhatsApp 💬</button>
+    </div>
+  </div>
+</div>
+
+
+<script src="pelanggan.js"></script>
+</body>
+</html>
